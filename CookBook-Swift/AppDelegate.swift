@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CookBook-Swift
 //
-//  Created by Jakub on 28.08.14.
+//  Created by Jakub Truhlar on 28.08.14.
 //  Copyright (c) 2014 Jakub Truhlar. All rights reserved.
 //
 

@@ -13,6 +13,11 @@
 		3B32333819AFD0B6002C1CB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B32333619AFD0B6002C1CB6 /* Main.storyboard */; };
 		3B32333A19AFD0B6002C1CB6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B32333919AFD0B6002C1CB6 /* Images.xcassets */; };
 		3B32334619AFD0B6002C1CB6 /* CookBook_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B32334519AFD0B6002C1CB6 /* CookBook_SwiftTests.swift */; };
+		3B32335019AFD0C7002C1CB6 /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B32334F19AFD0C7002C1CB6 /* RecipeManager.swift */; };
+		3B32335319AFD0FA002C1CB6 /* cesnecka.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B32335119AFD0FA002C1CB6 /* cesnecka.jpg */; };
+		3B32335419AFD0FA002C1CB6 /* gulas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B32335219AFD0FA002C1CB6 /* gulas.jpg */; };
+		3B32335619AFD54F002C1CB6 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B32335519AFD54F002C1CB6 /* RecipeViewController.swift */; };
+		3B32338519AFED3F002C1CB6 /* unknown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B32338419AFED3F002C1CB6 /* unknown.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		3B32333F19AFD0B6002C1CB6 /* CookBook-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CookBook-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B32334419AFD0B6002C1CB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B32334519AFD0B6002C1CB6 /* CookBook_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBook_SwiftTests.swift; sourceTree = "<group>"; };
+		3B32334F19AFD0C7002C1CB6 /* RecipeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
+		3B32335119AFD0FA002C1CB6 /* cesnecka.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cesnecka.jpg; path = Images/cesnecka.jpg; sourceTree = SOURCE_ROOT; };
+		3B32335219AFD0FA002C1CB6 /* gulas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gulas.jpg; path = Images/gulas.jpg; sourceTree = SOURCE_ROOT; };
+		3B32335519AFD54F002C1CB6 /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		3B32338419AFED3F002C1CB6 /* unknown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = unknown.jpg; path = Images/unknown.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +90,13 @@
 				3B32333019AFD0B6002C1CB6 /* AppDelegate.swift */,
 				3B32333219AFD0B6002C1CB6 /* MasterViewController.swift */,
 				3B32333419AFD0B6002C1CB6 /* DetailViewController.swift */,
+				3B32335519AFD54F002C1CB6 /* RecipeViewController.swift */,
+				3B32334F19AFD0C7002C1CB6 /* RecipeManager.swift */,
 				3B32333619AFD0B6002C1CB6 /* Main.storyboard */,
 				3B32333919AFD0B6002C1CB6 /* Images.xcassets */,
+				3B32335119AFD0FA002C1CB6 /* cesnecka.jpg */,
+				3B32338419AFED3F002C1CB6 /* unknown.jpg */,
+				3B32335219AFD0FA002C1CB6 /* gulas.jpg */,
 				3B32332E19AFD0B6002C1CB6 /* Supporting Files */,
 			);
 			path = "CookBook-Swift";
@@ -192,6 +207,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B32335419AFD0FA002C1CB6 /* gulas.jpg in Resources */,
+				3B32338519AFED3F002C1CB6 /* unknown.jpg in Resources */,
+				3B32335319AFD0FA002C1CB6 /* cesnecka.jpg in Resources */,
 				3B32333819AFD0B6002C1CB6 /* Main.storyboard in Resources */,
 				3B32333A19AFD0B6002C1CB6 /* Images.xcassets in Resources */,
 			);
@@ -212,8 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B32333519AFD0B6002C1CB6 /* DetailViewController.swift in Sources */,
+				3B32335019AFD0C7002C1CB6 /* RecipeManager.swift in Sources */,
 				3B32333319AFD0B6002C1CB6 /* MasterViewController.swift in Sources */,
 				3B32333119AFD0B6002C1CB6 /* AppDelegate.swift in Sources */,
+				3B32335619AFD54F002C1CB6 /* RecipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
