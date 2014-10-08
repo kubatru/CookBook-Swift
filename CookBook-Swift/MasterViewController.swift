@@ -26,12 +26,12 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     // UITableView Settings
-    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipeManager.cookbook.count
     }
     
     // Fill the list with data
-    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Default")
         
@@ -52,12 +52,12 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
             
             // If ingredient is NOT the last one, add comma
             if (i != recipeManager.cookbook[indexPath.row].ingedients.count - 1) {
-                detailTextLabel.text = detailTextLabel.text.stringByAppendingString("\(newLine), ")
+                detailTextLabel.text = detailTextLabel.text?.stringByAppendingString("\(newLine), ")
             }
             
             // The last ingredient
             else {
-                detailTextLabel.text = detailTextLabel.text.stringByAppendingString("\(newLine)")
+                detailTextLabel.text = detailTextLabel.text?.stringByAppendingString("\(newLine)")
             }
         }
         
@@ -115,7 +115,7 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "recipeDetail" {
             
-            var selectedRow: NSIndexPath = self.tableView.indexPathForSelectedRow()
+            var selectedRow: NSIndexPath = self.tableView.indexPathForSelectedRow()!
             let selectedRecipe = recipeManager.cookbook[selectedRow.row]
             // Do NOT forget to add recipeDetail identifier to segueIdentifier            
             (segue.destinationViewController as DetailViewController).recipeName = selectedRecipe.title

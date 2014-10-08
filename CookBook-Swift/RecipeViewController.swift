@@ -17,12 +17,12 @@ class RecipeViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     @IBAction func addBtnPressed(sender: UIButton) {
         
         // Only if both fields are not empty and image is selected
-        if !recipeNameField.text.isEqual("") && !recipeIngredientsField.text.isEqual("") && (!imageView.image == nil || imageView.image != UIImage (named: "unknown.jpg")) {
+        if !recipeNameField.text.isEmpty && !recipeIngredientsField.text.isEmpty && (imageView.image != UIImage (named: "unknown.jpg")) {
             
             var recipeIngredients: [String] = []
             recipeIngredients = recipeIngredientsField.text.componentsSeparatedByString(",")
             // Send data from fields to structure
-            recipeManager.newRecipe(recipeNameField.text, ingr: recipeIngredients, pht: imageView.image)
+            recipeManager.newRecipe(recipeNameField.text, ingr: recipeIngredients, pht: imageView.image!)
             
             // Hide keyboard
             self.view.endEditing(true)
@@ -32,14 +32,14 @@ class RecipeViewController: UIViewController, UITextFieldDelegate, UIImagePicker
             recipeIngredientsField.text = ""
             
             // Go back to the tableView scene
-            navigationController.popViewControllerAnimated(true)
+            navigationController?.popViewControllerAnimated(true)
             
         }
     }
     
     // Hide the keyboard when touch ends
     // Dont forget to set both TextFields as delegete to make it works
-    override func touchesEnded(touches: NSSet!, withEvent event: UIEvent!) {
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
         self.view.endEditing(true)
     }
     
