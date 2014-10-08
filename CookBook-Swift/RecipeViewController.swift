@@ -17,6 +17,7 @@ class RecipeViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     @IBAction func addBtnPressed(sender: UIButton) {
         
         // Only if both fields are not empty and image is selected
+        // Edited statement
         if !recipeNameField.text.isEmpty && !recipeIngredientsField.text.isEmpty && (imageView.image != UIImage (named: "unknown.jpg")) {
             
             var recipeIngredients: [String] = []
